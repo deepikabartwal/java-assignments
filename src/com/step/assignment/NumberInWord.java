@@ -1,9 +1,7 @@
 package com.step.assignment;
 
 public class NumberInWord {
-    public static void printNumberInWord(int number){
-        System.out.println(convertNumberInWord(number));
-    }
+
     public static String convertNumberInWord(int number){
         switch(number){
             case 0: {
