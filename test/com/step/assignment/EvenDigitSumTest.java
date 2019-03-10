@@ -1,4 +1,4 @@
-package com.step.assignment.masterChallenge;
+package com.step.assignment;
 
 import com.step.assignment.EvenDigitSum;
 import org.junit.jupiter.api.Test;
