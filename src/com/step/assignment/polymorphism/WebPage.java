@@ -2,7 +2,7 @@ package com.step.assignment.polymorphism;
 
 import java.util.Scanner;
 
-public class WebPage implements Displayable,Fetchable,Interactive{
+public class WebPage extends NonInteractiveWebPage{
     Scanner scanner = new Scanner(System.in);
     @Override
     public void display() {
@@ -16,7 +16,6 @@ public class WebPage implements Displayable,Fetchable,Interactive{
         return content;
     }
 
-    @Override
     public void click() {
         System.out.println("You clicked on this option");
     }
