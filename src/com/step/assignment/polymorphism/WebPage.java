@@ -2,7 +2,7 @@ package com.step.assignment.polymorphism;
 
 import java.util.Scanner;
 
-public class WebPage extends NonInteractiveWebPage{
+public class WebPage implements Displayable,Printable{
     Scanner scanner = new Scanner(System.in);
     @Override
     public void display() {

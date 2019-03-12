@@ -2,17 +2,18 @@ package com.step.assignment.polymorphism;
 
 import java.util.Scanner;
 
-public class NonInteractiveWebPage implements Displayable,Fetchable{
-    Scanner scanner = new Scanner(System.in);
+public class NonInteractiveWebPage extends WebPage{
     @Override
     public void display() {
-        String content = getContent();
-        System.out.println(content);
+        super.display();
     }
 
     @Override
     public String getContent() {
-        String content = scanner.nextLine();
-        return content;
+        return super.getContent();
+    }
+
+    public void click() {
+        System.out.println("Click function is not supported");
     }
 }
