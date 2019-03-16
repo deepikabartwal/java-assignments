@@ -1,4 +1,8 @@
 package com.step.assignment.secondAssignment;
 
-public class Range {
+import java.util.ArrayList;
+
+public abstract class Range <T> {
+    abstract ArrayList<T> getAll();
+    abstract boolean contains(T element);
 }
